@@ -1,0 +1,17 @@
+[2024-11-03T09:53:41.517+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-11-03T09:53:41.544+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_To_Data_Warehouse.audit_transform manual__2024-11-03T09:53:31.841748+00:00 [queued]>
+[2024-11-03T09:53:41.552+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_To_Data_Warehouse.audit_transform manual__2024-11-03T09:53:31.841748+00:00 [queued]>
+[2024-11-03T09:53:41.553+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-11-03T09:53:41.566+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): audit_transform> on 2024-11-03 09:53:31.841748+00:00
+[2024-11-03T09:53:41.572+0000] {standard_task_runner.py:63} INFO - Started process 6976 to run task
+[2024-11-03T09:53:41.576+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'ETL_To_Data_Warehouse', 'audit_transform', 'manual__2024-11-03T09:53:31.841748+00:00', '--job-id', '182', '--raw', '--subdir', 'DAGS_FOLDER/ETL_LDTBXH.dag.py', '--cfg-path', '/tmp/tmp1wbgb0wj']
+[2024-11-03T09:53:41.577+0000] {standard_task_runner.py:91} INFO - Job 182: Subtask audit_transform
+[2024-11-03T09:53:41.619+0000] {task_command.py:426} INFO - Running <TaskInstance: ETL_To_Data_Warehouse.audit_transform manual__2024-11-03T09:53:31.841748+00:00 [running]> on host 3d0ab7361361
+[2024-11-03T09:53:41.870+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_To_Data_Warehouse' AIRFLOW_CTX_TASK_ID='audit_transform' AIRFLOW_CTX_EXECUTION_DATE='2024-11-03T09:53:31.841748+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-03T09:53:31.841748+00:00'
+[2024-11-03T09:53:41.871+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-11-03T09:53:41.953+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-11-03T09:53:41.954+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-11-03T09:53:41.962+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=ETL_To_Data_Warehouse, task_id=audit_transform, run_id=manual__2024-11-03T09:53:31.841748+00:00, execution_date=20241103T095331, start_date=20241103T095341, end_date=20241103T095341
+[2024-11-03T09:53:41.989+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-11-03T09:53:42.014+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-03T09:53:42.016+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

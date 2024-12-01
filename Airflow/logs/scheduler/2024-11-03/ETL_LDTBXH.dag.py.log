@@ -1,0 +1,579 @@
+[2024-11-03T09:41:04.035+0000] {processor.py:161} INFO - Started process (PID=182) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:41:04.036+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:41:04.039+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:41:04.038+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:41:04.108+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:41:04.262+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:41:04.262+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:41:04.278+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:41:04.278+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:41:04.298+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.270 seconds
+[2024-11-03T09:41:34.548+0000] {processor.py:161} INFO - Started process (PID=453) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:41:34.549+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:41:34.551+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:41:34.551+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:41:34.627+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:41:34.653+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:41:34.653+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:41:34.677+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:41:34.676+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:41:34.695+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.152 seconds
+[2024-11-03T09:42:05.268+0000] {processor.py:161} INFO - Started process (PID=714) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:42:05.269+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:42:05.271+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:42:05.271+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:42:05.334+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:42:05.353+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:42:05.353+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:42:05.373+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:42:05.373+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:42:05.393+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.132 seconds
+[2024-11-03T09:42:36.387+0000] {processor.py:161} INFO - Started process (PID=980) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:42:36.389+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:42:36.392+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:42:36.391+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:42:36.456+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:42:36.475+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:42:36.475+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:42:36.496+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:42:36.496+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:42:36.515+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.135 seconds
+[2024-11-03T09:42:54.410+0000] {processor.py:161} INFO - Started process (PID=1240) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:42:54.411+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:42:54.413+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:42:54.413+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:42:54.479+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:42:54.475+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ETL_LDTBXH.dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_LDTBXH.dag.py", line 83, in <module>
+    trunc
+NameError: name 'trunc' is not defined
+[2024-11-03T09:42:54.480+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:42:54.504+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.101 seconds
+[2024-11-03T09:42:56.441+0000] {processor.py:161} INFO - Started process (PID=1245) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:42:56.442+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:42:56.445+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:42:56.444+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:42:56.528+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:42:56.549+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:42:56.549+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:42:56.571+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:42:56.571+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:42:56.592+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.157 seconds
+[2024-11-03T09:43:26.687+0000] {processor.py:161} INFO - Started process (PID=1511) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:43:26.688+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:43:26.689+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:43:26.689+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:43:26.743+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:43:26.760+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:43:26.760+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:43:26.776+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:43:26.776+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:43:26.793+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.110 seconds
+[2024-11-03T09:43:27.708+0000] {processor.py:161} INFO - Started process (PID=1516) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:43:27.709+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:43:27.711+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:43:27.711+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:43:27.722+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:43:27.721+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ETL_LDTBXH.dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_LDTBXH.dag.py", line 83
+    audit_transform >> 
+                       ^
+SyntaxError: invalid syntax
+[2024-11-03T09:43:27.723+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:43:27.738+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.035 seconds
+[2024-11-03T09:43:32.741+0000] {processor.py:161} INFO - Started process (PID=1521) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:43:32.742+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:43:32.744+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:43:32.744+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:43:32.812+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:43:32.832+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:43:32.832+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:43:32.850+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:43:32.850+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:43:32.870+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.134 seconds
+[2024-11-03T09:44:03.531+0000] {processor.py:161} INFO - Started process (PID=1787) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:03.532+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:44:03.534+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:44:03.534+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:03.602+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:03.622+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:44:03.622+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:44:03.643+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:44:03.643+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:44:03.661+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.136 seconds
+[2024-11-03T09:44:17.288+0000] {processor.py:161} INFO - Started process (PID=2053) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:17.290+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:44:17.292+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:44:17.292+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:17.358+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:17.381+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:44:17.381+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:44:17.403+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:44:17.403+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:44:17.425+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.143 seconds
+[2024-11-03T09:44:18.327+0000] {processor.py:161} INFO - Started process (PID=2058) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:18.328+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:44:18.329+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:44:18.329+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:18.393+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:18.413+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:44:18.413+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:44:18.433+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:44:18.433+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:44:18.453+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.131 seconds
+[2024-11-03T09:44:23.504+0000] {processor.py:161} INFO - Started process (PID=2063) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:23.505+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:44:23.507+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:44:23.507+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:23.522+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:44:23.521+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ETL_LDTBXH.dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_LDTBXH.dag.py", line 48
+    update_measure_stage_hongheo = PythonOperator(
+                                                 ^
+SyntaxError: '(' was never closed
+[2024-11-03T09:44:23.522+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:23.539+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.040 seconds
+[2024-11-03T09:44:27.535+0000] {processor.py:161} INFO - Started process (PID=2068) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:27.536+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:44:27.538+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:44:27.538+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:27.588+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:44:27.585+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ETL_LDTBXH.dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_LDTBXH.dag.py", line 54, in <module>
+    load
+NameError: name 'load' is not defined
+[2024-11-03T09:44:27.589+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:27.603+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.073 seconds
+[2024-11-03T09:44:32.615+0000] {processor.py:161} INFO - Started process (PID=2073) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:32.616+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:44:32.617+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:44:32.617+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:32.674+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:44:32.670+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ETL_LDTBXH.dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_LDTBXH.dag.py", line 54, in <module>
+    load_data
+NameError: name 'load_data' is not defined
+[2024-11-03T09:44:32.675+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:32.692+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.084 seconds
+[2024-11-03T09:44:38.896+0000] {processor.py:161} INFO - Started process (PID=2099) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:38.897+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:44:38.899+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:44:38.898+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:38.953+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:38.970+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:44:38.970+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:44:38.990+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:44:38.989+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:44:39.009+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.118 seconds
+[2024-11-03T09:44:41.935+0000] {processor.py:161} INFO - Started process (PID=2279) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:41.936+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:44:41.937+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:44:41.937+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:41.992+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:44:41.986+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ETL_LDTBXH.dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_LDTBXH.dag.py", line 54, in <module>
+    load_data_dwh_hongheo = SQLExecuteQueryOperator(
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 468, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sql'
+[2024-11-03T09:44:41.993+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:42.009+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.079 seconds
+[2024-11-03T09:44:43.580+0000] {processor.py:161} INFO - Started process (PID=2349) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:43.581+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:44:43.583+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:44:43.582+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:43.655+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:44:43.732+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:44:43.732+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:44:43.747+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:44:43.746+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:44:43.767+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.192 seconds
+[2024-11-03T09:45:05.703+0000] {processor.py:161} INFO - Started process (PID=2360) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:45:05.704+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:45:05.705+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:45:05.705+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:45:05.769+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:45:05.780+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:45:05.779+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:45:05.796+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:45:05.796+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:45:05.816+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.118 seconds
+[2024-11-03T09:45:09.565+0000] {processor.py:161} INFO - Started process (PID=2425) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:45:09.566+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:45:09.568+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:45:09.567+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:45:09.579+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:45:09.578+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ETL_LDTBXH.dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_LDTBXH.dag.py", line 90
+    audit_transform >> 
+                       ^
+SyntaxError: invalid syntax
+[2024-11-03T09:45:09.579+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:45:09.595+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.036 seconds
+[2024-11-03T09:45:13.118+0000] {processor.py:161} INFO - Started process (PID=2560) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:45:13.119+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:45:13.121+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:45:13.120+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:45:13.133+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:45:13.133+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ETL_LDTBXH.dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_LDTBXH.dag.py", line 90
+    audit_transform >> load_data_dwh_hongheo >> 
+                                                ^
+SyntaxError: invalid syntax
+[2024-11-03T09:45:13.134+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:45:13.156+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.042 seconds
+[2024-11-03T09:45:28.963+0000] {processor.py:161} INFO - Started process (PID=2630) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:45:28.964+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:45:28.966+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:45:28.965+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:45:28.979+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:45:28.978+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ETL_LDTBXH.dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_LDTBXH.dag.py", line 90
+    audit_transform >> load_data_dwh_hongheo >> 
+                                                ^
+SyntaxError: invalid syntax
+[2024-11-03T09:45:28.979+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:45:28.996+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.038 seconds
+[2024-11-03T09:45:57.867+0000] {processor.py:161} INFO - Started process (PID=2896) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:45:57.868+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:45:57.869+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:45:57.869+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:45:57.880+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:45:57.880+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ETL_LDTBXH.dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_LDTBXH.dag.py", line 91
+    audit_transform >> load_data_dwh_hongheo >> 
+                                                ^
+SyntaxError: invalid syntax
+[2024-11-03T09:45:57.881+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:45:57.897+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.035 seconds
+[2024-11-03T09:46:07.979+0000] {processor.py:161} INFO - Started process (PID=2907) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:07.980+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:46:07.981+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:46:07.980+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:07.993+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:46:07.991+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ETL_LDTBXH.dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_LDTBXH.dag.py", line 92
+    audit_transform >> load_data_dwh_hongheo >> 
+                                                ^
+SyntaxError: invalid syntax
+[2024-11-03T09:46:07.993+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:08.009+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.034 seconds
+[2024-11-03T09:46:11.163+0000] {processor.py:161} INFO - Started process (PID=3002) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:11.164+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:46:11.165+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:46:11.165+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:11.177+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:46:11.176+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ETL_LDTBXH.dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_LDTBXH.dag.py", line 92
+    audit_transform >> load_data_dwh_hongheo >> 
+                                                ^
+SyntaxError: invalid syntax
+[2024-11-03T09:46:11.177+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:11.194+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.035 seconds
+[2024-11-03T09:46:15.174+0000] {processor.py:161} INFO - Started process (PID=3107) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:15.175+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:46:15.176+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:46:15.176+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:15.189+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:46:15.188+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ETL_LDTBXH.dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_LDTBXH.dag.py", line 68
+    audit_load =
+                ^
+SyntaxError: invalid syntax
+[2024-11-03T09:46:15.189+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:15.207+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.038 seconds
+[2024-11-03T09:46:17.814+0000] {processor.py:161} INFO - Started process (PID=3177) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:17.815+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:46:17.816+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:46:17.815+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:17.827+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:46:17.826+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ETL_LDTBXH.dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_LDTBXH.dag.py", line 94
+    audit_transform >> load_data_dwh_hongheo >> 
+                                                ^
+SyntaxError: invalid syntax
+[2024-11-03T09:46:17.828+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:17.842+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.034 seconds
+[2024-11-03T09:46:19.852+0000] {processor.py:161} INFO - Started process (PID=3182) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:19.853+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:46:19.854+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:46:19.854+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:19.866+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:46:19.865+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ETL_LDTBXH.dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_LDTBXH.dag.py", line 96
+    audit_transform >> load_data_dwh_hongheo >> 
+                                                ^
+SyntaxError: invalid syntax
+[2024-11-03T09:46:19.866+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:19.884+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.036 seconds
+[2024-11-03T09:46:21.895+0000] {processor.py:161} INFO - Started process (PID=3187) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:21.896+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:46:21.897+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:46:21.897+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:21.908+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:46:21.907+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ETL_LDTBXH.dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_LDTBXH.dag.py", line 95
+    audit_transform >> load_data_dwh_hongheo >> 
+                                                ^
+SyntaxError: invalid syntax
+[2024-11-03T09:46:21.909+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:21.923+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.033 seconds
+[2024-11-03T09:46:24.968+0000] {processor.py:161} INFO - Started process (PID=3192) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:24.969+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:46:24.970+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:46:24.970+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:24.982+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:46:24.981+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ETL_LDTBXH.dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_LDTBXH.dag.py", line 95
+    audit_transform >> load_data_dwh_hongheo >> 
+                                                ^
+SyntaxError: invalid syntax
+[2024-11-03T09:46:24.983+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:24.998+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.035 seconds
+[2024-11-03T09:46:33.019+0000] {processor.py:161} INFO - Started process (PID=3197) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:33.020+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:46:33.021+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:46:33.020+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:33.032+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:46:33.031+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ETL_LDTBXH.dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_LDTBXH.dag.py", line 96
+    audit_transform >> load_data_dwh_hongheo >> 
+                                                ^
+SyntaxError: invalid syntax
+[2024-11-03T09:46:33.033+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:33.049+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.035 seconds
+[2024-11-03T09:46:36.082+0000] {processor.py:161} INFO - Started process (PID=3208) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:36.083+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:46:36.084+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:46:36.083+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:36.095+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:46:36.094+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ETL_LDTBXH.dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_LDTBXH.dag.py", line 97
+    audit_transform >> load_data_dwh_hongheo >> 
+                                                ^
+SyntaxError: invalid syntax
+[2024-11-03T09:46:36.096+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:46:36.111+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.034 seconds
+[2024-11-03T09:47:07.133+0000] {processor.py:161} INFO - Started process (PID=3474) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:47:07.134+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:47:07.135+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:47:07.135+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:47:07.146+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:47:07.145+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ETL_LDTBXH.dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_LDTBXH.dag.py", line 97
+    audit_transform >> load_data_dwh_hongheo >> 
+                                                ^
+SyntaxError: invalid syntax
+[2024-11-03T09:47:07.147+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:47:07.163+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.035 seconds
+[2024-11-03T09:47:37.465+0000] {processor.py:161} INFO - Started process (PID=3740) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:47:37.467+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:47:37.468+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:47:37.467+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:47:37.480+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:47:37.479+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ETL_LDTBXH.dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ETL_LDTBXH.dag.py", line 97
+    audit_transform >> load_data_dwh_hongheo >> 
+                                                ^
+SyntaxError: invalid syntax
+[2024-11-03T09:47:37.481+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:47:37.497+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.037 seconds
+[2024-11-03T09:47:57.053+0000] {processor.py:161} INFO - Started process (PID=4000) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:47:57.054+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:47:57.055+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:47:57.055+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:47:57.139+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:47:57.222+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:47:57.221+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:47:57.240+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:47:57.239+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:47:57.267+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.219 seconds
+[2024-11-03T09:48:03.332+0000] {processor.py:161} INFO - Started process (PID=4005) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:48:03.333+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:48:03.334+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:48:03.334+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:48:03.423+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:48:03.434+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:48:03.434+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:48:03.459+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:48:03.459+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:48:03.482+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.155 seconds
+[2024-11-03T09:48:29.337+0000] {processor.py:161} INFO - Started process (PID=4271) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:48:29.338+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:48:29.339+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:48:29.339+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:48:29.403+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:48:29.485+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:48:29.485+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:48:29.504+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:48:29.504+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:48:29.526+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.194 seconds
+[2024-11-03T09:48:30.358+0000] {processor.py:161} INFO - Started process (PID=4276) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:48:30.359+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:48:30.360+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:48:30.359+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:48:30.430+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:48:30.441+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:48:30.441+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:48:30.461+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:48:30.461+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:48:30.480+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.127 seconds
+[2024-11-03T09:49:01.392+0000] {processor.py:161} INFO - Started process (PID=4560) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:49:01.393+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:49:01.394+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:49:01.394+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:49:01.459+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:49:01.480+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:49:01.480+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:49:01.499+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:49:01.499+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:49:01.515+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.128 seconds
+[2024-11-03T09:49:31.572+0000] {processor.py:161} INFO - Started process (PID=4826) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:49:31.573+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:49:31.574+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:49:31.574+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:49:31.634+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:49:31.656+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:49:31.656+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:49:31.676+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:49:31.676+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:49:31.713+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.147 seconds
+[2024-11-03T09:50:01.774+0000] {processor.py:161} INFO - Started process (PID=5092) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:50:01.774+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:50:01.775+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:50:01.775+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:50:01.835+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:50:01.853+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:50:01.853+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:50:01.874+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:50:01.874+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:50:01.890+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.121 seconds
+[2024-11-03T09:50:32.037+0000] {processor.py:161} INFO - Started process (PID=5358) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:50:32.038+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:50:32.039+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:50:32.039+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:50:32.097+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:50:32.118+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:50:32.118+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:50:32.136+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:50:32.136+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:50:32.154+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.121 seconds
+[2024-11-03T09:51:02.731+0000] {processor.py:161} INFO - Started process (PID=5624) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:51:02.732+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:51:02.733+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:51:02.733+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:51:02.793+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:51:02.814+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:51:02.814+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:51:02.833+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:51:02.833+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:51:02.851+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.125 seconds
+[2024-11-03T09:51:33.540+0000] {processor.py:161} INFO - Started process (PID=5890) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:51:33.541+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:51:33.542+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:51:33.541+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:51:33.629+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:51:33.652+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:51:33.652+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:51:33.675+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:51:33.675+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:51:33.692+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.158 seconds
+[2024-11-03T09:52:04.362+0000] {processor.py:161} INFO - Started process (PID=6156) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:52:04.363+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:52:04.364+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:52:04.363+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:52:04.430+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:52:04.448+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:52:04.448+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:52:04.465+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:52:04.465+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:52:04.484+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.127 seconds
+[2024-11-03T09:52:35.356+0000] {processor.py:161} INFO - Started process (PID=6428) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:52:35.357+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:52:35.357+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:52:35.357+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:52:35.416+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:52:35.433+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:52:35.433+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:52:35.453+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:52:35.453+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:52:35.470+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.119 seconds
+[2024-11-03T09:53:05.671+0000] {processor.py:161} INFO - Started process (PID=6694) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:53:05.672+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:53:05.672+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:53:05.672+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:53:05.736+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:53:05.755+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:53:05.755+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:53:05.772+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:53:05.772+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:53:05.788+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.123 seconds
+[2024-11-03T09:53:35.841+0000] {processor.py:161} INFO - Started process (PID=6964) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:53:35.842+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:53:35.843+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:53:35.843+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:53:35.927+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:53:35.947+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:53:35.947+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:53:35.969+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:53:35.968+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:53:35.988+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.154 seconds
+[2024-11-03T09:54:06.227+0000] {processor.py:161} INFO - Started process (PID=7246) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:54:06.228+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:54:06.230+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:54:06.229+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:54:06.296+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:54:06.319+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:54:06.318+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:54:06.339+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:54:06.339+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:54:06.358+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.136 seconds
+[2024-11-03T09:54:36.990+0000] {processor.py:161} INFO - Started process (PID=7512) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:54:36.991+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:54:36.992+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:54:36.992+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:54:37.052+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:54:37.072+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:54:37.072+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:54:37.089+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:54:37.089+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:54:37.104+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.119 seconds
+[2024-11-03T09:55:07.407+0000] {processor.py:161} INFO - Started process (PID=7778) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:55:07.408+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:55:07.409+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:55:07.408+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:55:07.471+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:55:07.491+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:55:07.490+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:55:07.512+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:55:07.512+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:55:07.527+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.125 seconds
+[2024-11-03T09:55:37.943+0000] {processor.py:161} INFO - Started process (PID=8044) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:55:37.944+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T09:55:37.945+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:55:37.945+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:55:38.006+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T09:55:38.025+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:55:38.024+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T09:55:38.042+0000] {logging_mixin.py:188} INFO - [2024-11-03T09:55:38.042+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T09:55:38.060+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.122 seconds
+[2024-11-03T16:27:42.356+0000] {processor.py:161} INFO - Started process (PID=182) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T16:27:42.358+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T16:27:42.362+0000] {logging_mixin.py:188} INFO - [2024-11-03T16:27:42.361+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T16:27:42.455+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T16:27:42.650+0000] {logging_mixin.py:188} INFO - [2024-11-03T16:27:42.649+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T16:27:42.674+0000] {logging_mixin.py:188} INFO - [2024-11-03T16:27:42.673+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T16:27:42.691+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.347 seconds
+[2024-11-03T16:28:12.896+0000] {processor.py:161} INFO - Started process (PID=449) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T16:28:12.898+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-03T16:28:12.902+0000] {logging_mixin.py:188} INFO - [2024-11-03T16:28:12.901+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T16:28:12.976+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-03T16:28:13.001+0000] {logging_mixin.py:188} INFO - [2024-11-03T16:28:13.000+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-03T16:28:13.026+0000] {logging_mixin.py:188} INFO - [2024-11-03T16:28:13.025+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-02 23:00:00+00:00, run_after=2024-11-03 23:00:00+00:00
+[2024-11-03T16:28:13.048+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.159 seconds

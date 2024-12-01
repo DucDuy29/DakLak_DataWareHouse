@@ -1,0 +1,57 @@
+[2024-10-30T04:19:53.050+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-10-30T04:19:53.080+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_TO_Data_Warehouse.truncate manual__2024-10-30T04:19:49.707702+00:00 [queued]>
+[2024-10-30T04:19:53.090+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_TO_Data_Warehouse.truncate manual__2024-10-30T04:19:49.707702+00:00 [queued]>
+[2024-10-30T04:19:53.091+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-10-30T04:19:53.104+0000] {taskinstance.py:2330} INFO - Executing <Task(SQLExecuteQueryOperator): truncate> on 2024-10-30 04:19:49.707702+00:00
+[2024-10-30T04:19:53.110+0000] {standard_task_runner.py:63} INFO - Started process 12065 to run task
+[2024-10-30T04:19:53.113+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'ETL_TO_Data_Warehouse', 'truncate', 'manual__2024-10-30T04:19:49.707702+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/ETL_LDTBXH.dag.py', '--cfg-path', '/tmp/tmpevcszx4p']
+[2024-10-30T04:19:53.116+0000] {standard_task_runner.py:91} INFO - Job 6: Subtask truncate
+[2024-10-30T04:19:53.165+0000] {task_command.py:426} INFO - Running <TaskInstance: ETL_TO_Data_Warehouse.truncate manual__2024-10-30T04:19:49.707702+00:00 [running]> on host 3d0ab7361361
+[2024-10-30T04:19:53.241+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_TO_Data_Warehouse' AIRFLOW_CTX_TASK_ID='truncate' AIRFLOW_CTX_EXECUTION_DATE='2024-10-30T04:19:49.707702+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-30T04:19:49.707702+00:00'
+[2024-10-30T04:19:53.244+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-10-30T04:19:53.244+0000] {sql.py:276} INFO - Executing: TRUNCATE TABLE Stg_DimHoGiaDinh;
+TRUNCATE TABLE Stg_DimRaSoat;
+
+BEGIN TRANSACTION;
+    INSERT INTO DimAuditForeigned(process_name, start_at, finished_at, information, status) VALUES
+    ('data integration', NOW(), NOW(), 'refreshed data', 'PENDING');
+COMMIT;
+[2024-10-30T04:19:53.253+0000] {base.py:84} INFO - Using connection ID 'ldtbxh_stage' for task execution.
+[2024-10-30T04:19:53.267+0000] {base.py:84} INFO - Using connection ID 'ldtbxh_stage' for task execution.
+[2024-10-30T04:19:53.299+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-10-30T04:19:53.300+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/common/sql/operators/sql.py", line 282, in execute
+    output = hook.run(
+             ^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/common/sql/hooks/sql.py", line 431, in run
+    with self._create_autocommit_connection(autocommit) as conn:
+  File "/usr/local/lib/python3.11/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/common/sql/hooks/sql.py", line 551, in _create_autocommit_connection
+    with closing(self.get_conn()) as conn:
+                 ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/mysql/hooks/mysql.py", line 196, in get_conn
+    return MySQLdb.connect(**conn_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/MySQLdb/__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/MySQLdb/connections.py", line 195, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (2002, "Can't connect to server on '127.0.0.1' (115)")
+[2024-10-30T04:19:53.311+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=ETL_TO_Data_Warehouse, task_id=truncate, run_id=manual__2024-10-30T04:19:49.707702+00:00, execution_date=20241030T041949, start_date=20241030T041953, end_date=20241030T041953
+[2024-10-30T04:19:53.323+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 6 for task truncate ((2002, "Can't connect to server on '127.0.0.1' (115)"); 12065)
+[2024-10-30T04:19:53.368+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-10-30T04:19:53.388+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-30T04:19:53.392+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

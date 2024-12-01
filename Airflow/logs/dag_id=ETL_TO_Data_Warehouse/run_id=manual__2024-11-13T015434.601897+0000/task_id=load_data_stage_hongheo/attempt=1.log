@@ -1,0 +1,149 @@
+[2024-11-13T01:54:39.983+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-11-13T01:54:40.022+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_To_Data_Warehouse.load_data_stage_hongheo manual__2024-11-13T01:54:34.601897+00:00 [queued]>
+[2024-11-13T01:54:40.033+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_To_Data_Warehouse.load_data_stage_hongheo manual__2024-11-13T01:54:34.601897+00:00 [queued]>
+[2024-11-13T01:54:40.034+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-11-13T01:54:40.056+0000] {taskinstance.py:2330} INFO - Executing <Task(SQLExecuteQueryOperator): load_data_stage_hongheo> on 2024-11-13 01:54:34.601897+00:00
+[2024-11-13T01:54:40.064+0000] {standard_task_runner.py:63} INFO - Started process 13022 to run task
+[2024-11-13T01:54:40.069+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'ETL_To_Data_Warehouse', 'load_data_stage_hongheo', 'manual__2024-11-13T01:54:34.601897+00:00', '--job-id', '781', '--raw', '--subdir', 'DAGS_FOLDER/ETL_LDTBXH.dag.py', '--cfg-path', '/tmp/tmp1a_835d2']
+[2024-11-13T01:54:40.072+0000] {standard_task_runner.py:91} INFO - Job 781: Subtask load_data_stage_hongheo
+[2024-11-13T01:54:40.137+0000] {task_command.py:426} INFO - Running <TaskInstance: ETL_To_Data_Warehouse.load_data_stage_hongheo manual__2024-11-13T01:54:34.601897+00:00 [running]> on host 3d0ab7361361
+[2024-11-13T01:54:40.597+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_To_Data_Warehouse' AIRFLOW_CTX_TASK_ID='load_data_stage_hongheo' AIRFLOW_CTX_EXECUTION_DATE='2024-11-13T01:54:34.601897+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-13T01:54:34.601897+00:00'
+[2024-11-13T01:54:40.598+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-11-13T01:54:40.598+0000] {sql.py:276} INFO - Executing: Start transaction;
+
+-- Load source vào Stg_DimHoGiaDinh
+INSERT INTO Stg_DimHoGiaDinh 
+    (ID_Ho, HoTenChuHo, CCCD_ChuHo, GioiTinh, NgaySinhChuHo,
+     Ten_Thon, Ten_Xa, Ten_Huyen, Ten_Tinh, LoaiKhuVuc, TenKhuVuc)
+SELECT 
+    a.ID_Ho, a.HoTenChuHo, a.CCCD_ChuHo, a.GioiTinh, a.NgaySinhChuHo,
+    c.Ten_Thon, c.Ten_Xa, c.Ten_Huyen, c.Ten_Tinh, 
+    b.LoaiKhuVuc, b.TenKhuVuc
+FROM 
+    db_hongheo_daknong.HoGiaDinh a
+JOIN 
+    db_hongheo_daknong.KhuVuc b ON a.ID_KhuVuc = b.ID_KhuVuc
+JOIN 
+    db_hongheo_daknong.DonViHanhChinh c ON a.ID_DonVi = c.ID_DonVi
+WHERE 
+    a.Create_Date >= (SELECT MAX(finished_at) FROM DimAuditForeigned WHERE status='SUCCESS');
+    
+-- Load source vào Stg_DimRaSoat
+INSERT INTO Stg_DimRaSoat
+	(ID_Ho, NgayRaSoat, ID_PhieuA, ID_PhieuB1, DiemB1, ID_PhieuB2, DiemB2)
+SELECT 
+	d.ID_Ho, d.NgayRaSoat, e.ID_PhieuA, f.ID_PhieuB1, f.DiemB1, g.ID_PhieuB2, g.Diem_B2
+FROM 
+	db_hongheo_daknong.RaSoat d
+JOIN 
+	db_hongheo_daknong.PhieuA e ON d.NgayRaSoat = e.NgayRaSoat
+JOIN 
+	db_hongheo_daknong.PhieuB1 f ON d.NgayRaSoat = f.NgayRaSoat
+JOIN 
+	db_hongheo_daknong.PhieuB2 g ON d.NgayRaSoat = g.NgayRaSoat
+WHERE
+	e.Create_Date_A >= (SELECT MAX(finished_at) FROM DimAuditForeigned WHERE status='SUCCESS')
+OR 
+	f.Create_Date_B1 >= (SELECT MAX(finished_at) FROM DimAuditForeigned WHERE status='SUCCESS')
+OR
+	g.Create_Date_B2 >= (SELECT MAX(finished_at) FROM DimAuditForeigned WHERE status='SUCCESS');
+
+-- Load source vào Stg_HoGDRaSoat_Fact
+INSERT INTO Stg_HoGDRaSoat_Fact
+	(ID_HoGiaDinh, HoTenChuHo, CCCD_ChuHo , LoaiKhuVuc, TenKhuVuc, NgayRaSoat, Diem_B1, Diem_B2)
+SELECT 
+	h.ID_Ho, h.HoTenChuHo, h.CCCD_ChuHo, j.LoaiKhuVuc, j.TenKhuVuc, max(m.NgayRaSoat) as NgayRaSoat, k.DiemB1, l.Diem_B2
+FROM 
+	db_hongheo_daknong.HoGiaDinh h
+JOIN 
+	db_hongheo_daknong.KhuVuc j ON h.ID_KhuVuc = j.ID_KhuVuc
+JOIN 
+	db_hongheo_daknong.PhieuB1 k ON h.ID_Ho = k.ID_Ho
+JOIN 
+	db_hongheo_daknong.PhieuB2 l ON h.ID_Ho = l.ID_Ho
+JOIN 
+	db_hongheo_daknong.RaSoat m ON h.ID_Ho = m.ID_Ho
+WHERE
+	h.Create_Date >= (SELECT MAX(finished_at) FROM DimAuditForeigned WHERE status='SUCCESS')
+OR 
+	k.Create_Date_B1 >= (SELECT MAX(finished_at) FROM DimAuditForeigned WHERE status='SUCCESS')
+OR 
+	l.Create_Date_B2 >= (SELECT MAX(finished_at) FROM DimAuditForeigned WHERE status='SUCCESS')
+GROUP BY 
+	h.ID_Ho, h.HoTenChuHo, h.CCCD_ChuHo, j.LoaiKhuVuc, j.TenKhuVuc, k.DiemB1, l.Diem_B2;
+
+Commit;
+
+[2024-11-13T01:54:40.608+0000] {base.py:84} INFO - Using connection ID 'ldtbxh_stage' for task execution.
+[2024-11-13T01:54:40.619+0000] {base.py:84} INFO - Using connection ID 'ldtbxh_stage' for task execution.
+[2024-11-13T01:54:40.635+0000] {sql.py:487} INFO - Running statement: Start transaction;
+
+-- Load source vào Stg_DimHoGiaDinh
+INSERT INTO Stg_DimHoGiaDinh 
+    (ID_Ho, HoTenChuHo, CCCD_ChuHo, GioiTinh, NgaySinhChuHo,
+     Ten_Thon, Ten_Xa, Ten_Huyen, Ten_Tinh, LoaiKhuVuc, TenKhuVuc)
+SELECT 
+    a.ID_Ho, a.HoTenChuHo, a.CCCD_ChuHo, a.GioiTinh, a.NgaySinhChuHo,
+    c.Ten_Thon, c.Ten_Xa, c.Ten_Huyen, c.Ten_Tinh, 
+    b.LoaiKhuVuc, b.TenKhuVuc
+FROM 
+    db_hongheo_daknong.HoGiaDinh a
+JOIN 
+    db_hongheo_daknong.KhuVuc b ON a.ID_KhuVuc = b.ID_KhuVuc
+JOIN 
+    db_hongheo_daknong.DonViHanhChinh c ON a.ID_DonVi = c.ID_DonVi
+WHERE 
+    a.Create_Date >= (SELECT MAX(finished_at) FROM DimAuditForeigned WHERE status='SUCCESS');
+    
+-- Load source vào Stg_DimRaSoat
+INSERT INTO Stg_DimRaSoat
+	(ID_Ho, NgayRaSoat, ID_PhieuA, ID_PhieuB1, DiemB1, ID_PhieuB2, DiemB2)
+SELECT 
+	d.ID_Ho, d.NgayRaSoat, e.ID_PhieuA, f.ID_PhieuB1, f.DiemB1, g.ID_PhieuB2, g.Diem_B2
+FROM 
+	db_hongheo_daknong.RaSoat d
+JOIN 
+	db_hongheo_daknong.PhieuA e ON d.NgayRaSoat = e.NgayRaSoat
+JOIN 
+	db_hongheo_daknong.PhieuB1 f ON d.NgayRaSoat = f.NgayRaSoat
+JOIN 
+	db_hongheo_daknong.PhieuB2 g ON d.NgayRaSoat = g.NgayRaSoat
+WHERE
+	e.Create_Date_A >= (SELECT MAX(finished_at) FROM DimAuditForeigned WHERE status='SUCCESS')
+OR 
+	f.Create_Date_B1 >= (SELECT MAX(finished_at) FROM DimAuditForeigned WHERE status='SUCCESS')
+OR
+	g.Create_Date_B2 >= (SELECT MAX(finished_at) FROM DimAuditForeigned WHERE status='SUCCESS');
+
+-- Load source vào Stg_HoGDRaSoat_Fact
+INSERT INTO Stg_HoGDRaSoat_Fact
+	(ID_HoGiaDinh, HoTenChuHo, CCCD_ChuHo , LoaiKhuVuc, TenKhuVuc, NgayRaSoat, Diem_B1, Diem_B2)
+SELECT 
+	h.ID_Ho, h.HoTenChuHo, h.CCCD_ChuHo, j.LoaiKhuVuc, j.TenKhuVuc, max(m.NgayRaSoat) as NgayRaSoat, k.DiemB1, l.Diem_B2
+FROM 
+	db_hongheo_daknong.HoGiaDinh h
+JOIN 
+	db_hongheo_daknong.KhuVuc j ON h.ID_KhuVuc = j.ID_KhuVuc
+JOIN 
+	db_hongheo_daknong.PhieuB1 k ON h.ID_Ho = k.ID_Ho
+JOIN 
+	db_hongheo_daknong.PhieuB2 l ON h.ID_Ho = l.ID_Ho
+JOIN 
+	db_hongheo_daknong.RaSoat m ON h.ID_Ho = m.ID_Ho
+WHERE
+	h.Create_Date >= (SELECT MAX(finished_at) FROM DimAuditForeigned WHERE status='SUCCESS')
+OR 
+	k.Create_Date_B1 >= (SELECT MAX(finished_at) FROM DimAuditForeigned WHERE status='SUCCESS')
+OR 
+	l.Create_Date_B2 >= (SELECT MAX(finished_at) FROM DimAuditForeigned WHERE status='SUCCESS')
+GROUP BY 
+	h.ID_Ho, h.HoTenChuHo, h.CCCD_ChuHo, j.LoaiKhuVuc, j.TenKhuVuc, k.DiemB1, l.Diem_B2;
+
+Commit;
+, parameters: None
+[2024-11-13T01:54:40.637+0000] {sql.py:496} INFO - Rows affected: 0
+[2024-11-13T01:54:40.750+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-11-13T01:54:40.758+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=ETL_To_Data_Warehouse, task_id=load_data_stage_hongheo, run_id=manual__2024-11-13T01:54:34.601897+00:00, execution_date=20241113T015434, start_date=20241113T015440, end_date=20241113T015440
+[2024-11-13T01:54:40.804+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-11-13T01:54:40.995+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-13T01:54:40.997+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,6 @@
+- Báo cáo thông tin chung về NCC (BaoCaoNCC_Fact): Key_NCC, Key_Benef, Id_NCC, Id_Benef, NCC_Code, fullName, gender, dateOfBirth, ethnic, identityCard_NCC, identityCard_Benef, nativePlace, decided, medicalCondition
+
+- Thông tin NCC (Dim_NCC): Key_NCC, Id_NCC, NCC_Code, fullName_NCC, gender, dateOfBirth, ethnic, identityCard_NCC, nativePlace, province_id, district_id, ward_id, decided, medicalCondition
+
+- Thông tin Người thụ hưởng (Dim_info_Benef): Key_Benef, Id_Benef, fullName_Benef, dateOfBirth, gender, identityCard_Benef, nativePlace, relation, beneficiary, isNCC, status, province_id, district_id, ward_id
+

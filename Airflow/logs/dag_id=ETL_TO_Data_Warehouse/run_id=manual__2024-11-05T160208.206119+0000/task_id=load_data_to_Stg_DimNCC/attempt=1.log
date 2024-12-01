@@ -1,0 +1,36 @@
+[2024-11-05T16:02:13.129+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-11-05T16:02:13.157+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_To_Data_Warehouse.load_data_to_Stg_DimNCC manual__2024-11-05T16:02:08.206119+00:00 [queued]>
+[2024-11-05T16:02:13.165+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_To_Data_Warehouse.load_data_to_Stg_DimNCC manual__2024-11-05T16:02:08.206119+00:00 [queued]>
+[2024-11-05T16:02:13.166+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-11-05T16:02:13.177+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): load_data_to_Stg_DimNCC> on 2024-11-05 16:02:08.206119+00:00
+[2024-11-05T16:02:13.183+0000] {standard_task_runner.py:63} INFO - Started process 18659 to run task
+[2024-11-05T16:02:13.185+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'ETL_To_Data_Warehouse', 'load_data_to_Stg_DimNCC', 'manual__2024-11-05T16:02:08.206119+00:00', '--job-id', '309', '--raw', '--subdir', 'DAGS_FOLDER/ETL_LDTBXH.dag.py', '--cfg-path', '/tmp/tmpwftdwtjn']
+[2024-11-05T16:02:13.186+0000] {standard_task_runner.py:91} INFO - Job 309: Subtask load_data_to_Stg_DimNCC
+[2024-11-05T16:02:13.232+0000] {task_command.py:426} INFO - Running <TaskInstance: ETL_To_Data_Warehouse.load_data_to_Stg_DimNCC manual__2024-11-05T16:02:08.206119+00:00 [running]> on host 3d0ab7361361
+[2024-11-05T16:02:13.531+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_To_Data_Warehouse' AIRFLOW_CTX_TASK_ID='load_data_to_Stg_DimNCC' AIRFLOW_CTX_EXECUTION_DATE='2024-11-05T16:02:08.206119+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-05T16:02:08.206119+00:00'
+[2024-11-05T16:02:13.533+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-11-05T16:02:13.534+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-11-05T16:02:13.535+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python -m opt/***/plugins/NCC/load_api_to_stgNCC.py']
+[2024-11-05T16:02:13.547+0000] {subprocess.py:86} INFO - Output:
+[2024-11-05T16:02:13.610+0000] {subprocess.py:93} INFO - /home/***/.local/bin/python: Error while finding module specification for 'opt/***/plugins/NCC/load_api_to_stgNCC.py' (ModuleNotFoundError: No module named 'opt/***/plugins/NCC/load_api_to_stgNCC'). Try using 'opt/***/plugins/NCC/load_api_to_stgNCC' instead of 'opt/***/plugins/NCC/load_api_to_stgNCC.py' as the module name.
+[2024-11-05T16:02:13.614+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-11-05T16:02:13.615+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-11-05T16:02:13.626+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-11-05T16:02:13.630+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=ETL_To_Data_Warehouse, task_id=load_data_to_Stg_DimNCC, run_id=manual__2024-11-05T16:02:08.206119+00:00, execution_date=20241105T160208, start_date=20241105T160213, end_date=20241105T160213
+[2024-11-05T16:02:13.641+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 309 for task load_data_to_Stg_DimNCC (Bash command failed. The command returned a non-zero exit code 1.; 18659)
+[2024-11-05T16:02:13.679+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-11-05T16:02:13.707+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-05T16:02:13.710+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

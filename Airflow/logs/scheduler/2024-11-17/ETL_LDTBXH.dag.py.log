@@ -1,0 +1,210 @@
+[2024-11-17T02:50:39.454+0000] {processor.py:161} INFO - Started process (PID=176) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:50:39.455+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T02:50:39.457+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:50:39.457+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:50:39.590+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:50:39.779+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:50:39.779+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T02:50:39.799+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:50:39.799+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T02:50:39.833+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.386 seconds
+[2024-11-17T02:51:10.482+0000] {processor.py:161} INFO - Started process (PID=442) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:51:10.483+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T02:51:10.486+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:51:10.486+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:51:10.643+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:51:10.695+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:51:10.695+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T02:51:10.750+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:51:10.749+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T02:51:10.790+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.315 seconds
+[2024-11-17T02:51:41.390+0000] {processor.py:161} INFO - Started process (PID=714) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:51:41.392+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T02:51:41.394+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:51:41.393+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:51:41.503+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:51:41.526+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:51:41.525+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T02:51:41.545+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:51:41.545+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T02:51:41.561+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.176 seconds
+[2024-11-17T02:52:12.392+0000] {processor.py:161} INFO - Started process (PID=980) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:52:12.393+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T02:52:12.396+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:52:12.395+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:52:12.542+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:52:12.569+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:52:12.568+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T02:52:12.593+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:52:12.593+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T02:52:12.612+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.227 seconds
+[2024-11-17T02:52:43.519+0000] {processor.py:161} INFO - Started process (PID=1246) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:52:43.520+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T02:52:43.522+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:52:43.522+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:52:43.650+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:52:43.673+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:52:43.672+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T02:52:43.695+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:52:43.695+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T02:52:43.715+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.201 seconds
+[2024-11-17T02:53:14.667+0000] {processor.py:161} INFO - Started process (PID=1512) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:53:14.667+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T02:53:14.669+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:53:14.669+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:53:14.791+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:53:14.814+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:53:14.814+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T02:53:14.834+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:53:14.834+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T02:53:14.851+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.192 seconds
+[2024-11-17T02:53:45.042+0000] {processor.py:161} INFO - Started process (PID=1783) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:53:45.044+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T02:53:45.046+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:53:45.046+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:53:45.162+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:53:45.185+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:53:45.185+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T02:53:45.206+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:53:45.205+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T02:53:45.222+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.186 seconds
+[2024-11-17T02:54:16.025+0000] {processor.py:161} INFO - Started process (PID=2044) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:54:16.026+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T02:54:16.028+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:54:16.027+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:54:16.177+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:54:16.206+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:54:16.206+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T02:54:16.236+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:54:16.236+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T02:54:16.264+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.245 seconds
+[2024-11-17T02:54:47.078+0000] {processor.py:161} INFO - Started process (PID=2310) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:54:47.079+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T02:54:47.081+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:54:47.080+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:54:47.192+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:54:47.213+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:54:47.212+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T02:54:47.231+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:54:47.231+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T02:54:47.246+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.173 seconds
+[2024-11-17T02:55:18.044+0000] {processor.py:161} INFO - Started process (PID=2576) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:55:18.045+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T02:55:18.046+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:55:18.046+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:55:18.150+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:55:18.172+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:55:18.172+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T02:55:18.193+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:55:18.193+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T02:55:18.211+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.173 seconds
+[2024-11-17T02:55:48.811+0000] {processor.py:161} INFO - Started process (PID=2842) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:55:48.812+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T02:55:48.814+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:55:48.814+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:55:48.926+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:55:48.948+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:55:48.947+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T02:55:48.968+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:55:48.968+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T02:55:48.982+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.176 seconds
+[2024-11-17T02:56:19.078+0000] {processor.py:161} INFO - Started process (PID=3108) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:56:19.079+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T02:56:19.081+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:56:19.080+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:56:19.200+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:56:19.223+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:56:19.223+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T02:56:19.246+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:56:19.245+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T02:56:19.267+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.195 seconds
+[2024-11-17T02:56:49.339+0000] {processor.py:161} INFO - Started process (PID=3374) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:56:49.340+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T02:56:49.341+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:56:49.341+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:56:49.447+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:56:49.470+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:56:49.470+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T02:56:49.489+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:56:49.489+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T02:56:49.505+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.172 seconds
+[2024-11-17T02:57:19.558+0000] {processor.py:161} INFO - Started process (PID=3640) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:57:19.559+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T02:57:19.560+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:57:19.560+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:57:19.668+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:57:19.689+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:57:19.689+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T02:57:19.709+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:57:19.708+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T02:57:19.724+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.171 seconds
+[2024-11-17T02:57:49.962+0000] {processor.py:161} INFO - Started process (PID=3906) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:57:49.963+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T02:57:49.965+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:57:49.964+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:57:50.076+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:57:50.099+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:57:50.099+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T02:57:50.121+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:57:50.121+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T02:57:50.143+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.186 seconds
+[2024-11-17T02:58:20.180+0000] {processor.py:161} INFO - Started process (PID=4172) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:58:20.181+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T02:58:20.182+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:58:20.182+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:58:20.286+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:58:20.310+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:58:20.310+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T02:58:20.330+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:58:20.330+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T02:58:20.348+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.173 seconds
+[2024-11-17T02:58:50.413+0000] {processor.py:161} INFO - Started process (PID=4438) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:58:50.414+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T02:58:50.416+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:58:50.415+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:58:50.525+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:58:50.549+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:58:50.548+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T02:58:50.569+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:58:50.569+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T02:58:50.585+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.177 seconds
+[2024-11-17T02:59:20.842+0000] {processor.py:161} INFO - Started process (PID=4704) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:59:20.843+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T02:59:20.845+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:59:20.845+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:59:20.967+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:59:20.993+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:59:20.993+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T02:59:21.014+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:59:21.014+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T02:59:21.031+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.195 seconds
+[2024-11-17T02:59:51.195+0000] {processor.py:161} INFO - Started process (PID=4975) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:59:51.196+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T02:59:51.197+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:59:51.197+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:59:51.316+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T02:59:51.338+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:59:51.338+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T02:59:51.357+0000] {logging_mixin.py:188} INFO - [2024-11-17T02:59:51.357+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T02:59:51.375+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.185 seconds
+[2024-11-17T03:00:21.418+0000] {processor.py:161} INFO - Started process (PID=5244) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:00:21.418+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T03:00:21.420+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:00:21.420+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:00:21.550+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:00:21.575+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:00:21.574+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T03:00:21.595+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:00:21.595+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T03:00:21.610+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.197 seconds
+[2024-11-17T03:00:51.706+0000] {processor.py:161} INFO - Started process (PID=5512) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:00:51.706+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T03:00:51.709+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:00:51.708+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:00:51.820+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:00:51.841+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:00:51.841+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T03:00:51.860+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:00:51.860+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T03:00:51.877+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.177 seconds
+[2024-11-17T03:01:22.624+0000] {processor.py:161} INFO - Started process (PID=5773) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:01:22.625+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T03:01:22.628+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:01:22.627+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:01:22.783+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:01:22.818+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:01:22.817+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T03:01:22.848+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:01:22.848+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T03:01:22.875+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.260 seconds
+[2024-11-17T03:01:52.918+0000] {processor.py:161} INFO - Started process (PID=6039) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:01:52.919+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T03:01:52.920+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:01:52.920+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:01:53.035+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:01:53.058+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:01:53.058+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T03:01:53.078+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:01:53.078+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T03:01:53.094+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.181 seconds
+[2024-11-17T03:02:23.317+0000] {processor.py:161} INFO - Started process (PID=6305) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:02:23.318+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T03:02:23.320+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:02:23.320+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:02:23.428+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:02:23.452+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:02:23.451+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T03:02:23.472+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:02:23.471+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T03:02:23.490+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.178 seconds
+[2024-11-17T03:02:53.540+0000] {processor.py:161} INFO - Started process (PID=6571) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:02:53.541+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T03:02:53.543+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:02:53.542+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:02:53.649+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:02:53.669+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:02:53.669+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T03:02:53.688+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:02:53.688+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T03:02:53.705+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.169 seconds
+[2024-11-17T03:03:23.862+0000] {processor.py:161} INFO - Started process (PID=6842) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:03:23.863+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T03:03:23.864+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:03:23.864+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:03:23.973+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:03:23.995+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:03:23.994+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T03:03:24.014+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:03:24.014+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T03:03:24.031+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.174 seconds
+[2024-11-17T03:03:54.097+0000] {processor.py:161} INFO - Started process (PID=7111) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:03:54.098+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T03:03:54.100+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:03:54.100+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:03:54.215+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:03:54.239+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:03:54.238+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T03:03:54.258+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:03:54.257+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T03:03:54.275+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.183 seconds
+[2024-11-17T03:04:24.434+0000] {processor.py:161} INFO - Started process (PID=7382) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:04:24.435+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T03:04:24.437+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:04:24.437+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:04:24.546+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:04:24.566+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:04:24.566+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T03:04:24.584+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:04:24.584+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T03:04:24.601+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.172 seconds
+[2024-11-17T03:04:55.014+0000] {processor.py:161} INFO - Started process (PID=7635) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:04:55.015+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T03:04:55.016+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:04:55.016+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:04:55.122+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:04:55.144+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:04:55.143+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T03:04:55.162+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:04:55.162+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T03:04:55.178+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.168 seconds
+[2024-11-17T03:05:25.318+0000] {processor.py:161} INFO - Started process (PID=7901) to work on /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:05:25.319+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ETL_LDTBXH.dag.py for tasks to queue
+[2024-11-17T03:05:25.321+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:05:25.320+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:05:25.428+0000] {processor.py:840} INFO - DAG(s) 'ETL_To_Data_Warehouse' retrieved from /opt/airflow/dags/ETL_LDTBXH.dag.py
+[2024-11-17T03:05:25.450+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:05:25.449+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-11-17T03:05:25.470+0000] {logging_mixin.py:188} INFO - [2024-11-17T03:05:25.470+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL_To_Data_Warehouse to 2024-11-16 23:00:00+00:00, run_after=2024-11-17 23:00:00+00:00
+[2024-11-17T03:05:25.485+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ETL_LDTBXH.dag.py took 0.172 seconds

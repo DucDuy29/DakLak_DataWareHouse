@@ -1,0 +1,205 @@
+[2024-11-12T01:25:56.140+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-11-12T01:25:56.165+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ETL_To_Data_Warehouse.load_data_dwh_hongheo manual__2024-11-12T01:24:54.300922+00:00 [queued]>
+[2024-11-12T01:25:56.174+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ETL_To_Data_Warehouse.load_data_dwh_hongheo manual__2024-11-12T01:24:54.300922+00:00 [queued]>
+[2024-11-12T01:25:56.175+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-11-12T01:25:56.186+0000] {taskinstance.py:2330} INFO - Executing <Task(SQLExecuteQueryOperator): load_data_dwh_hongheo> on 2024-11-12 01:24:54.300922+00:00
+[2024-11-12T01:25:56.192+0000] {standard_task_runner.py:63} INFO - Started process 1537 to run task
+[2024-11-12T01:25:56.195+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'ETL_To_Data_Warehouse', 'load_data_dwh_hongheo', 'manual__2024-11-12T01:24:54.300922+00:00', '--job-id', '622', '--raw', '--subdir', 'DAGS_FOLDER/ETL_LDTBXH.dag.py', '--cfg-path', '/tmp/tmp65qmx6b1']
+[2024-11-12T01:25:56.196+0000] {standard_task_runner.py:91} INFO - Job 622: Subtask load_data_dwh_hongheo
+[2024-11-12T01:25:56.234+0000] {task_command.py:426} INFO - Running <TaskInstance: ETL_To_Data_Warehouse.load_data_dwh_hongheo manual__2024-11-12T01:24:54.300922+00:00 [running]> on host 3d0ab7361361
+[2024-11-12T01:25:56.309+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='ETL_To_Data_Warehouse' AIRFLOW_CTX_TASK_ID='load_data_dwh_hongheo' AIRFLOW_CTX_EXECUTION_DATE='2024-11-12T01:24:54.300922+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-12T01:24:54.300922+00:00'
+[2024-11-12T01:25:56.311+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-11-12T01:25:56.312+0000] {sql.py:276} INFO - Executing: use LDTBXH_Dwh;
+SET SQL_SAFE_UPDATES = 0;
+
+start transaction;
+
+-- Update DimHoGiaDinh với SCD Type 2
+UPDATE DimHoGiaDinh
+SET 
+    RowIsCurrent = FALSE,
+    RowEndDate = current_timestamp
+WHERE 
+    EXISTS (
+        SELECT 1
+        FROM LDTBXH_Stg.Stg_DimHoGiaDinh a
+        WHERE 
+            a.CCCD_ChuHo = DimHoGiaDinh.CCCD_ChuHo 
+            AND DimHoGiaDinh.RowEndDate IS NULL
+            AND (
+                a.Ten_Thon <> DimHoGiaDinh.Ten_Thon OR
+                a.Ten_Xa <> DimHoGiaDinh.Ten_Xa OR
+                a.Ten_Huyen <> DimHoGiaDinh.Ten_Huyen OR
+                a.Ten_Tinh <> DimHoGiaDinh.Ten_Tinh OR
+                a.TenKhuVuc <> DimHoGiaDinh.TenKhuVuc
+				)
+    );
+    
+-- Insert Data vào DimHoGiaDinh nếu như chưa có dữ liệu Hộ GD đó
+insert into DimHoGiaDinh
+    (ID_Ho, HoTenChuHo, CCCD_ChuHo, GioiTinh, NgaySinhChuHo, 
+    Ten_Thon, Ten_Xa, Ten_Huyen, Ten_Tinh, LoaiKhuVuc, TenKhuVuc, RowIsCurrent, RowStartDate, RowEndDate)
+select 
+    a.ID_Ho, a.HoTenChuHo, a.CCCD_ChuHo, a.GioiTinh, a.NgaySinhChuHo, 
+    a.Ten_Thon, a.Ten_Xa, a.Ten_Huyen, a.Ten_Tinh, a.LoaiKhuVuc, a.TenKhuVuc,
+    TRUE as RowIsCurrent, current_timestamp as RowStartDate, NULL as RowEndDate
+from 
+    LDTBXH_Stg.Stg_DimHoGiaDinh a
+where
+    (a.ID_Ho, a.CCCD_ChuHo, a.Ten_Thon, a.Ten_Xa, a.Ten_Huyen, a.Ten_Tinh, a.TenKhuVuc) not in 
+    (select ID_Ho, CCCD_ChuHo, Ten_Thon, Ten_Xa, Ten_Huyen, Ten_Tinh, TenKhuVuc from DimHoGiaDinh);
+
+-- Update DimRaSoat với SCD Type 2
+UPDATE DimRaSoat
+SET 
+    RowIsCurrent = FALSE,
+    RowEndDate = current_timestamp
+WHERE 
+    EXISTS (
+        SELECT 1
+        FROM LDTBXH_Stg.Stg_DimRaSoat b
+        WHERE 
+            b.ID_Ho = DimRaSoat.ID_Ho 
+            AND (
+				b.NgayRaSoat <> DimRaSoat.NgayRaSoat OR
+                b.DiemB1 <> DimRaSoat.DiemB1 OR
+                b.DiemB2 <> DimRaSoat.DiemB2
+                )
+            AND DimRaSoat.RowEndDate IS NULL
+    );
+    
+-- Insert Data vào DimRaSoat nếu như chưa có dữ liệu đó
+insert into DimRaSoat
+    (ID_Ho, NgayRaSoat, ID_PhieuA, ID_PhieuB1, DiemB1, ID_PhieuB2, DiemB2, RowIsCurrent, RowStartDate, RowEndDate)
+select 
+	b.ID_Ho, b.NgayRaSoat, b.ID_PhieuA, b.ID_PhieuB1, b.DiemB1, b.ID_PhieuB2, b.DiemB2,
+    TRUE as RowIsCurrent, current_timestamp as RowStartDate, NULL as RowEndDate
+from 
+    LDTBXH_Stg.Stg_DimRaSoat b
+where
+    (b.ID_Ho, b.NgayRaSoat, b.ID_PhieuA, b.ID_PhieuB1, b.ID_PhieuB2) not in 
+    (select ID_Ho, NgayRaSoat, ID_PhieuA, ID_PhieuB1, ID_PhieuB2 from DimRaSoat);
+
+-- Load Stg_HoGDRaSoat_Fact vào HoGDRaSoat_Fact
+INSERT INTO HoGDRaSoat_Fact
+    (HoGD_Key, RaSoat_Key, Date_Key, ID_HoGiaDinh, HoTenChuHo, LoaiKhuVuc, 
+     TenKhuVuc, NgayRaSoat, Diem_B1, Diem_B2, TongDiemB1B2, KetQuaCuoiCung)
+SELECT
+    (SELECT HoGD_Key FROM DimHoGiaDinh WHERE ID_HoGiaDinh = src.ID_HoGiaDinh LIMIT 1) AS HoGD_Key,
+    (SELECT RaSoat_Key FROM DimRaSoat WHERE NgayRaSoat = src.NgayRaSoat LIMIT 1) AS RaSoat_Key,
+    (YEAR(NgayRaSoat) * 10000 + MONTH(NgayRaSoat) * 100 + DAY(NgayRaSoat)) AS Date_Key,
+    src.ID_HoGiaDinh, src.HoTenChuHo, src.LoaiKhuVuc, src.TenKhuVuc, 
+    src.NgayRaSoat, src.Diem_B1, src.Diem_B2, src.TongDiemB1B2, src.KetQuaCuoiCung
+FROM
+    LDTBXH_Stg.Stg_HoGDRaSoat_Fact src
+WHERE
+    (SELECT HoGD_Key FROM DimHoGiaDinh WHERE ID_HoGiaDinh = src.ID_HoGiaDinh LIMIT 1) IS NOT NULL
+    AND (SELECT RaSoat_Key FROM DimRaSoat WHERE NgayRaSoat = src.NgayRaSoat LIMIT 1) IS NOT NULL
+    AND (YEAR(NgayRaSoat) * 10000 + MONTH(NgayRaSoat) * 100 + DAY(NgayRaSoat)) NOT IN 
+        (SELECT Date_Key FROM HoGDRaSoat_Fact
+         WHERE HoGD_Key = (SELECT HoGD_Key FROM DimHoGiaDinh WHERE ID_HoGiaDinh = src.ID_HoGiaDinh LIMIT 1)
+         AND RaSoat_Key = (SELECT RaSoat_Key FROM DimRaSoat WHERE NgayRaSoat = src.NgayRaSoat LIMIT 1));
+commit;
+
+
+[2024-11-12T01:25:56.319+0000] {base.py:84} INFO - Using connection ID 'ldtbxh_dwh' for task execution.
+[2024-11-12T01:25:56.327+0000] {base.py:84} INFO - Using connection ID 'ldtbxh_dwh' for task execution.
+[2024-11-12T01:25:56.338+0000] {sql.py:487} INFO - Running statement: use LDTBXH_Dwh;
+SET SQL_SAFE_UPDATES = 0;
+
+start transaction;
+
+-- Update DimHoGiaDinh với SCD Type 2
+UPDATE DimHoGiaDinh
+SET 
+    RowIsCurrent = FALSE,
+    RowEndDate = current_timestamp
+WHERE 
+    EXISTS (
+        SELECT 1
+        FROM LDTBXH_Stg.Stg_DimHoGiaDinh a
+        WHERE 
+            a.CCCD_ChuHo = DimHoGiaDinh.CCCD_ChuHo 
+            AND DimHoGiaDinh.RowEndDate IS NULL
+            AND (
+                a.Ten_Thon <> DimHoGiaDinh.Ten_Thon OR
+                a.Ten_Xa <> DimHoGiaDinh.Ten_Xa OR
+                a.Ten_Huyen <> DimHoGiaDinh.Ten_Huyen OR
+                a.Ten_Tinh <> DimHoGiaDinh.Ten_Tinh OR
+                a.TenKhuVuc <> DimHoGiaDinh.TenKhuVuc
+				)
+    );
+    
+-- Insert Data vào DimHoGiaDinh nếu như chưa có dữ liệu Hộ GD đó
+insert into DimHoGiaDinh
+    (ID_Ho, HoTenChuHo, CCCD_ChuHo, GioiTinh, NgaySinhChuHo, 
+    Ten_Thon, Ten_Xa, Ten_Huyen, Ten_Tinh, LoaiKhuVuc, TenKhuVuc, RowIsCurrent, RowStartDate, RowEndDate)
+select 
+    a.ID_Ho, a.HoTenChuHo, a.CCCD_ChuHo, a.GioiTinh, a.NgaySinhChuHo, 
+    a.Ten_Thon, a.Ten_Xa, a.Ten_Huyen, a.Ten_Tinh, a.LoaiKhuVuc, a.TenKhuVuc,
+    TRUE as RowIsCurrent, current_timestamp as RowStartDate, NULL as RowEndDate
+from 
+    LDTBXH_Stg.Stg_DimHoGiaDinh a
+where
+    (a.ID_Ho, a.CCCD_ChuHo, a.Ten_Thon, a.Ten_Xa, a.Ten_Huyen, a.Ten_Tinh, a.TenKhuVuc) not in 
+    (select ID_Ho, CCCD_ChuHo, Ten_Thon, Ten_Xa, Ten_Huyen, Ten_Tinh, TenKhuVuc from DimHoGiaDinh);
+
+-- Update DimRaSoat với SCD Type 2
+UPDATE DimRaSoat
+SET 
+    RowIsCurrent = FALSE,
+    RowEndDate = current_timestamp
+WHERE 
+    EXISTS (
+        SELECT 1
+        FROM LDTBXH_Stg.Stg_DimRaSoat b
+        WHERE 
+            b.ID_Ho = DimRaSoat.ID_Ho 
+            AND (
+				b.NgayRaSoat <> DimRaSoat.NgayRaSoat OR
+                b.DiemB1 <> DimRaSoat.DiemB1 OR
+                b.DiemB2 <> DimRaSoat.DiemB2
+                )
+            AND DimRaSoat.RowEndDate IS NULL
+    );
+    
+-- Insert Data vào DimRaSoat nếu như chưa có dữ liệu đó
+insert into DimRaSoat
+    (ID_Ho, NgayRaSoat, ID_PhieuA, ID_PhieuB1, DiemB1, ID_PhieuB2, DiemB2, RowIsCurrent, RowStartDate, RowEndDate)
+select 
+	b.ID_Ho, b.NgayRaSoat, b.ID_PhieuA, b.ID_PhieuB1, b.DiemB1, b.ID_PhieuB2, b.DiemB2,
+    TRUE as RowIsCurrent, current_timestamp as RowStartDate, NULL as RowEndDate
+from 
+    LDTBXH_Stg.Stg_DimRaSoat b
+where
+    (b.ID_Ho, b.NgayRaSoat, b.ID_PhieuA, b.ID_PhieuB1, b.ID_PhieuB2) not in 
+    (select ID_Ho, NgayRaSoat, ID_PhieuA, ID_PhieuB1, ID_PhieuB2 from DimRaSoat);
+
+-- Load Stg_HoGDRaSoat_Fact vào HoGDRaSoat_Fact
+INSERT INTO HoGDRaSoat_Fact
+    (HoGD_Key, RaSoat_Key, Date_Key, ID_HoGiaDinh, HoTenChuHo, LoaiKhuVuc, 
+     TenKhuVuc, NgayRaSoat, Diem_B1, Diem_B2, TongDiemB1B2, KetQuaCuoiCung)
+SELECT
+    (SELECT HoGD_Key FROM DimHoGiaDinh WHERE ID_HoGiaDinh = src.ID_HoGiaDinh LIMIT 1) AS HoGD_Key,
+    (SELECT RaSoat_Key FROM DimRaSoat WHERE NgayRaSoat = src.NgayRaSoat LIMIT 1) AS RaSoat_Key,
+    (YEAR(NgayRaSoat) * 10000 + MONTH(NgayRaSoat) * 100 + DAY(NgayRaSoat)) AS Date_Key,
+    src.ID_HoGiaDinh, src.HoTenChuHo, src.LoaiKhuVuc, src.TenKhuVuc, 
+    src.NgayRaSoat, src.Diem_B1, src.Diem_B2, src.TongDiemB1B2, src.KetQuaCuoiCung
+FROM
+    LDTBXH_Stg.Stg_HoGDRaSoat_Fact src
+WHERE
+    (SELECT HoGD_Key FROM DimHoGiaDinh WHERE ID_HoGiaDinh = src.ID_HoGiaDinh LIMIT 1) IS NOT NULL
+    AND (SELECT RaSoat_Key FROM DimRaSoat WHERE NgayRaSoat = src.NgayRaSoat LIMIT 1) IS NOT NULL
+    AND (YEAR(NgayRaSoat) * 10000 + MONTH(NgayRaSoat) * 100 + DAY(NgayRaSoat)) NOT IN 
+        (SELECT Date_Key FROM HoGDRaSoat_Fact
+         WHERE HoGD_Key = (SELECT HoGD_Key FROM DimHoGiaDinh WHERE ID_HoGiaDinh = src.ID_HoGiaDinh LIMIT 1)
+         AND RaSoat_Key = (SELECT RaSoat_Key FROM DimRaSoat WHERE NgayRaSoat = src.NgayRaSoat LIMIT 1));
+commit;
+
+, parameters: None
+[2024-11-12T01:25:56.340+0000] {sql.py:496} INFO - Rows affected: 0
+[2024-11-12T01:25:56.354+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-11-12T01:25:56.361+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=ETL_To_Data_Warehouse, task_id=load_data_dwh_hongheo, run_id=manual__2024-11-12T01:24:54.300922+00:00, execution_date=20241112T012454, start_date=20241112T012556, end_date=20241112T012556
+[2024-11-12T01:25:56.407+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-11-12T01:25:56.424+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-12T01:25:56.427+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
